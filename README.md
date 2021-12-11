@@ -19,5 +19,6 @@ clicking [this link](https://github.com/HealthScreening/Success-Screening-Clone/
 
 A full request to this URL might look like this:
 `file://C:\Users\User\Desktop\Success-Screening-Clone-main\page.html?type=guest&name=John+Doe&date=Wednesday,+December+8,+2021+7:15+AM`
-**Note:**: Replace `C:\Users\User\Desktop\Success-Screening-Clone-main\page.html` with wherever you saved the folder
-from the download above. On MacOS/Linux, the path might be `/Users/User/Desktop/Success-Screening-Clone-main/page.html`.
+
+**Note:** Replace `C:\Users\User\Desktop\Success-Screening-Clone-main\page.html` with wherever you saved the folder from
+the download above. On MacOS/Linux, the path might be `/Users/User/Desktop/Success-Screening-Clone-main/page.html`.
