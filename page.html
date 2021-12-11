@@ -17,6 +17,10 @@
         let element = document.getElementById(id);
         element.innerText = url.searchParams.get(param)
       }
+      function pageType(){
+        let url = new URL(window.location.href);
+        return url.searchParams.get('type');
+      }
     </script>
     <style type="text/css">
       svg:not(:root).svg-inline--fa {
@@ -792,7 +796,16 @@
             <div id="guest_badges_content">
               <div>
                 <div class="entry-badges">
-                  <div class="card bg-light mb-3 employee-badge">
+                  <div id="badge-controller" class="card bg-light mb-3">
+                    <script>
+                      let type = pageType();
+                      let classList = document.getElementById("badge-controller").classList;
+                      if (type === "guest"){
+                        classList.add("guest-badge");
+                      } else {
+                        classList.add("employee-badge");
+                      }
+                    </script>
                     <div class="card-header">
                       <svg
                         class="svg-inline--fa fa-user-circle fa-w-16 fa-3x text-secondary float-left"
@@ -815,7 +828,12 @@
                           copyParam('name-header', 'name')
                         </script>
                       </h2>
-                      <div class="badge float-right badge-pill badge-pill-student"></div>
+                      <div class="badge float-right badge-pill" id="badge-div"></div>
+                      <script>
+                        if (pageType() === "student"){
+                          document.getElementById("badge-div").classList.add('badge-pill-student');
+                        }
+                      </script>
                     </div>
                     <div class="card-body text-center p-4">
                       <div class="h2">
