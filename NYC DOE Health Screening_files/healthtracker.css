@@ -4830,10 +4830,6 @@ a.badge:focus {
   text-decoration: none;
 }
 
-.badge:empty {
-  display: none;
-}
-
 .btn .badge {
   position: relative;
   top: -1px;
