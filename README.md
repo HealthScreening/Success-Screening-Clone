@@ -3,7 +3,7 @@
 A HTML copy of the "success" page upon completing a health screening. This is to be used for demonstration purposes
 only.
 
-## Preinstallation
+## Font Preinstallation
 
 Linux systems such as Ubuntu do not have the required fonts to make the health screening page load with the default font of
 Arial. In order to install them, run the command below (Debian/Ubuntu/any other distro using apt):
