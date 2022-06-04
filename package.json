@@ -1,6 +1,6 @@
 {
   "name": "@healthscreening/success-screening-clone",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A HTML copy of the \"success\" page upon completing a health screening. This is to be used for demonstration purposes only.",
   "main": "index.js",
   "scripts": {
